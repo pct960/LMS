@@ -10,22 +10,23 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
-            f3.Show();
+            Form4 f4 = new Form4();
+            f4.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form2 f2 = new Form2();
+            f2.Show();
         }
     }
 }

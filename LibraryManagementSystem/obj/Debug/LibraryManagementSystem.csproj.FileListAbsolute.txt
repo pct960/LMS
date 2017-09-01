@@ -1,1 +1,18 @@
 c:\users\tejasvi\documents\visual studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csprojResolveAssemblyReference.cache
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form1.resources
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form2.resources
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form3.resources
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.Cache
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form4.resources
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form5.resources
+D:\sams\7th sem\C#\Project\LMS-master\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form6.resources
+C:\Users\WKS_Admin\Code\vbproj\LMS\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
+C:\Users\WKS_Admin\Code\vbproj\LMS\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+C:\Users\WKS_Admin\Code\vbproj\LMS\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb

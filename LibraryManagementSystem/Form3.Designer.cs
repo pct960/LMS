@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagementSystem
 {
-    partial class Form1
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -37,44 +37,44 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(238, 106);
+            this.label1.Location = new System.Drawing.Point(324, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(418, 32);
+            this.label1.Size = new System.Drawing.Size(256, 32);
             this.label1.TabIndex = 0;
-            this.label1.Text = "WELCOME TO THE LIBRARY";
+            this.label1.Text = "PLEASE SELECT";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(592, 289);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(157, 201);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 43);
+            this.button1.Size = new System.Drawing.Size(193, 97);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Next >";
+            this.button1.Text = "LIBRARIAN";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(162, 289);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(538, 201);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 43);
+            this.button2.Size = new System.Drawing.Size(163, 97);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Close";
+            this.button2.Text = "STUDENT";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 382);
+            this.ClientSize = new System.Drawing.Size(930, 454);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Form3";
+            this.Text = "MDI form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,4 +87,3 @@
         private System.Windows.Forms.Button button2;
     }
 }
-
