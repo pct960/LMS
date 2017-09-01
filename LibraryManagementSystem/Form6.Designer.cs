@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button3
@@ -54,7 +56,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(147, 63);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Return Book";
+            this.button2.Text = "Renew Book";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -64,14 +66,14 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 63);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Issue Book";
+            this.button1.Text = "Borrow";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(148, 159);
+            this.label2.Location = new System.Drawing.Point(148, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 24);
             this.label2.TabIndex = 8;
@@ -81,9 +83,9 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(152, 202);
+            this.listBox1.Location = new System.Drawing.Point(152, 298);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(329, 196);
+            this.listBox1.Size = new System.Drawing.Size(329, 100);
             this.listBox1.TabIndex = 7;
             // 
             // label1
@@ -92,15 +94,35 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(382, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 32);
+            this.label1.Size = new System.Drawing.Size(349, 32);
             this.label1.TabIndex = 6;
-            this.label1.Text = "DASHBOARD";
+            this.label1.Text = "STUDENT DASHBOARD";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(148, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 24);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Search";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(152, 161);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(329, 28);
+            this.textBox1.TabIndex = 13;
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1106, 473);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -122,5 +144,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
