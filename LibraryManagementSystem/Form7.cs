@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,39 +20,7 @@ namespace LibraryManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sname = textBox1.Text;
-            string regno = textBox2.Text;
-            string pwd = textBox3.Text;
-            string rpwd = textBox4.Text;
-            string branch = textBox5.Text;
-
-            if (sname == "")
-            {
-                MessageBox.Show("Please enter the student name");
-            }
-            if (regno == "")
-            {
-                MessageBox.Show("Please enter the register number");
-            }
-            if (pwd == "")
-            {
-                MessageBox.Show("Please enter the password");
-            }
-            if (rpwd == "")
-            {
-                MessageBox.Show("Please retype the password");
-            }
-            if (branch == "")
-            {
-                MessageBox.Show("Please enter your branch");
-            }
-            else if((sname!="") && (regno!="") && (pwd!="") && (rpwd!="") && (branch!=""))
-            {
-                //Store into database and go to Dashboard form-form6
-                Form6 f6 = new Form6();
-                f6.Show();
-
-            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,9 +49,59 @@ namespace LibraryManagementSystem
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Form6 ob = new Form6();
-            this.Close();
-            ob.Show();
+            string sname = textBox1.Text;
+            string regno = textBox2.Text;
+            string pwd = textBox3.Text;
+            string rpwd = textBox5.Text;
+            string class_name = textBox4.Text;
+
+            if (sname == "")
+            {
+                MessageBox.Show("Please enter the student name");
+            }
+            if (regno == "")
+            {
+                MessageBox.Show("Please enter the register number");
+            }
+            if (pwd == "")
+            {
+                MessageBox.Show("Please enter the password");
+            }
+            if (rpwd == "")
+            {
+                MessageBox.Show("Please retype the password");
+            }
+            if (class_name == "")
+            {
+                MessageBox.Show("Please enter your branch");
+            }
+            if(!pwd.Equals(rpwd))
+            {
+                MessageBox.Show("Passwords don't match");
+            }
+            else if ((sname != "") && (regno != "") && (pwd != "") && (rpwd != "") && (class_name != ""))
+            {
+                SqlConnection objConnection = new SqlConnection();
+                objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+                SqlCommand objCommand = new SqlCommand();
+                objCommand.Connection = objConnection;
+                objCommand.CommandText = "INSERT INTO Student VALUES(@1,@2,@3,@4)";
+                objCommand.Parameters.AddWithValue("@1", regno);
+                objCommand.Parameters.AddWithValue("@2", sname);
+                objCommand.Parameters.AddWithValue("@3", class_name);
+                objCommand.Parameters.AddWithValue("@4", pwd);
+
+                objConnection.Open();
+                objCommand.ExecuteNonQuery();
+                objConnection.Close();
+                MessageBox.Show("Thank you. Application successfully added to the database", "Status");
+
+                Form6 ob = new Form6();
+                this.Close();
+                ob.Show();
+
+            }
+            
         }
     }
 }

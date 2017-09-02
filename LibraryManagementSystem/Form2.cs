@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -70,9 +72,35 @@ namespace LibraryManagementSystem
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Form6 ob = new Form6();
-            this.Close();
-            ob.Show();
+            String reg_no = textBox1.Text;
+            String password = textBox2.Text;
+            bool login_success = false;
+            SqlConnection objConnection = new SqlConnection();
+            objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+            SqlCommand objCommand = new SqlCommand();
+            objCommand.Connection = objConnection;
+            objCommand.CommandText = "SELECT * FROM Student WHERE Reg_No=@1 AND Password=@2";
+            objCommand.Parameters.AddWithValue("@1", int.Parse(reg_no));
+            objCommand.Parameters.AddWithValue("@2", password);
+            SqlDataReader reader;
+            objConnection.Open();
+            reader = objCommand.ExecuteReader();
+
+            while(reader.Read())
+            {
+                login_success = true;
+                Form6 ob = new Form6();
+                this.Close();
+                ob.Show();
+            }
+
+            if(!login_success)
+            {
+                MessageBox.Show("Incorrect Email or Password. Try again", "Login Failed", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+
+            }
+
+
         }
 
         private void button3_Click_1(object sender, EventArgs e)
