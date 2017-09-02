@@ -47,3 +47,6 @@ C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\L
 C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.SplashScreen.resources
 C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.Cache
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form10.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form8.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form9.resources

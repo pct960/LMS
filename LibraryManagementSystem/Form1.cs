@@ -40,5 +40,24 @@ namespace LibraryManagementSystem
             button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form3 ob = new Form3();
+            this.Close();
+            ob.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form7 ob = new Form7();
+            this.Close();
+            ob.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

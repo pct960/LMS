@@ -53,13 +53,14 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Book Antiqua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.BlanchedAlmond;
-            this.button3.Location = new System.Drawing.Point(326, 437);
+            this.button3.Location = new System.Drawing.Point(329, 477);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(401, 74);
             this.button3.TabIndex = 7;
             this.button3.Text = "Exit";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -68,13 +69,14 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Book Antiqua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.BlanchedAlmond;
-            this.button2.Location = new System.Drawing.Point(326, 296);
+            this.button2.Location = new System.Drawing.Point(329, 336);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(401, 74);
             this.button2.TabIndex = 6;
             this.button2.Text = "Sign up";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -83,13 +85,14 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Book Antiqua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.BlanchedAlmond;
-            this.button1.Location = new System.Drawing.Point(326, 159);
+            this.button1.Location = new System.Drawing.Point(329, 199);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(401, 74);
             this.button1.TabIndex = 5;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 

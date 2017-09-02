@@ -10,37 +10,35 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form5 : Form
+    public partial class Form9 : Form
     {
-        public Form5()
+        public Form9()
         {
             InitializeComponent();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form10 ob = new Form10();
-            this.Close();
-            ob.Show();
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
+        private void Form9_Load(object sender, EventArgs e)
         {
             button1.FlatAppearance.BorderSize = 1;
             button2.FlatAppearance.BorderSize = 1;
-            button3.FlatAppearance.BorderSize = 1;
+           
             button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
+           
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Form1 ob = new Form1();
+            this.Close();
+            ob.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form5 ob = new Form5();
             this.Close();
             ob.Show();
         }

@@ -10,22 +10,14 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Form5 : Form
+    public partial class Form8 : Form
     {
-        public Form5()
+        public Form8()
         {
             InitializeComponent();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form10 ob = new Form10();
-            this.Close();
-            ob.Show();
-        }
-
-        private void Form5_Load(object sender, EventArgs e)
+        private void Form8_Load(object sender, EventArgs e)
         {
             button1.FlatAppearance.BorderSize = 1;
             button2.FlatAppearance.BorderSize = 1;
@@ -40,7 +32,7 @@ namespace LibraryManagementSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 ob = new Form1();
+            Form6 ob = new Form6();
             this.Close();
             ob.Show();
         }
