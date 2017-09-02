@@ -89,6 +89,7 @@ namespace LibraryManagementSystem
             while(reader.Read())
             {
                 login_success = true;
+                Class1 obj = new Class1("Student", reg_no);
                 Form6 ob = new Form6();
                 this.Close();
                 ob.Show();

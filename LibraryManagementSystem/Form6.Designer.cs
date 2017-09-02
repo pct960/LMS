@@ -111,6 +111,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(329, 28);
             this.textBox1.TabIndex = 213;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button3
             // 
@@ -126,6 +127,7 @@
             this.button3.TabIndex = 220;
             this.button3.Text = "Borrow this book";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // Form6
             // 

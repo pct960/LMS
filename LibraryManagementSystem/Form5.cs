@@ -42,6 +42,7 @@ namespace LibraryManagementSystem
             connection.Close();
             dataGridView1.DataSource = ds;
             dataGridView1.DataMember = "Books";
+            dataGridView1.Columns[3].Visible = false;
             button1.FlatAppearance.BorderSize = 1;
             button2.FlatAppearance.BorderSize = 1;
             button3.FlatAppearance.BorderSize = 1;

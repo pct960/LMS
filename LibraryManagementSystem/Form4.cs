@@ -66,10 +66,11 @@ namespace LibraryManagementSystem
             SqlDataReader reader;
             objConnection.Open();
             reader = objCommand.ExecuteReader();
-
+            
             while (reader.Read())
             {
                 login_success = true;
+                Class1 obj = new Class1("Admin", admin_id.ToString());
                 Form5 ob = new Form5();
                 this.Close();
                 ob.Show();
