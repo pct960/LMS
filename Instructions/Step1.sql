@@ -1,0 +1,30 @@
+USE [LMS]
+GO
+
+/****** Object:  Table [dbo].[Student]    Script Date: 9/2/2017 8:55:43 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Student](
+	[Reg_No] [int] NOT NULL,
+	[Name] [varchar](max) NULL,
+	[Class] [varchar](max) NULL,
+	[Password] [varchar](max) NULL,
+ CONSTRAINT [PK_Student] PRIMARY KEY CLUSTERED 
+(
+	[Reg_No] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

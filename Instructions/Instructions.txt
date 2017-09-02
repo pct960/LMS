@@ -1,0 +1,11 @@
+1. Download MSSQL Server with tools
+2. Set it up with the instructions from the PDF document
+3. Create a database
+4. Change all occurrences of the connection string to
+   Server=<computer-name>\<SQL server name;Database=<db name>;user=<created-user>;password=<created-password>
+   
+   Example, in my computer it is
+   "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox"
+5. Run the SQL scripts one by one in order in an SQL query editor in SQL server management studio
+6. Populate the tables with the data in the Excel sheets
+7. Once you've taken care of all the above steps, you're good to go
