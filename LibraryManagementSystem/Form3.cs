@@ -33,5 +33,16 @@ namespace LibraryManagementSystem
         {
             this.Close();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            button1.FlatAppearance.BorderSize = 1;
+            button2.FlatAppearance.BorderSize = 1;
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            
+        }
     }
 }
