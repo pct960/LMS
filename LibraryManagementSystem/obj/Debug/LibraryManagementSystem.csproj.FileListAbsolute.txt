@@ -32,3 +32,18 @@ C:\Users\WKS_Admin\Code\vbproj\LibraryManagementSystem\obj\Debug\LibraryManageme
 C:\Users\WKS_Admin\Code\vbproj\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 C:\Users\WKS_Admin\Code\vbproj\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.Cache
 C:\Users\WKS_Admin\Code\vbproj\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.SplashScreen.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.exe
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form1.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form2.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form3.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form4.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form5.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form6.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Form7.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.SplashScreen.resources
+C:\Users\Tejasvi\Documents\Visual Studio 2015\Projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.Cache
