@@ -59,8 +59,9 @@ namespace LibraryManagementSystem
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form4 ob = new Form4();
             this.Close();
+            Form4 ob = new Form4();
+           
             ob.Show();
         }
     }

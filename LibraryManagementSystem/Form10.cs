@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.Data.Sql;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,7 +39,27 @@ namespace LibraryManagementSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            String isbn = textBox3.Text;
+            String name = textBox1.Text;
+            String author = textBox2.Text;
+            SqlConnection objConnection = new SqlConnection();
+            objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+            SqlCommand objCommand = new SqlCommand();
+            objCommand.Connection = objConnection;
+            objCommand.CommandText = "INSERT INTO Books VALUES(@1,@2,@3,'1')";
+            objCommand.Parameters.AddWithValue("@1", isbn);
+            objCommand.Parameters.AddWithValue("@2", name);
+            objCommand.Parameters.AddWithValue("@3", author);
 
+            objConnection.Open();
+            objCommand.ExecuteNonQuery();
+            objConnection.Close();
+
+            MessageBox.Show("You have successfullly added the book to the database", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
         }
     }
 }

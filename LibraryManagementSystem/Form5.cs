@@ -60,5 +60,59 @@ namespace LibraryManagementSystem
             this.Close();
             ob.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bool flag = true;
+            String isbn = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            SqlConnection objConnection = new SqlConnection();
+            objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+            SqlCommand objCommand = new SqlCommand();
+            objCommand.Connection = objConnection;
+            objCommand.CommandText = "SELECT * FROM Issued WHERE ISBN='"+isbn+"'";
+            SqlDataReader reader;
+            objConnection.Open();
+            reader = objCommand.ExecuteReader();
+            
+            while(reader.Read())
+            {
+                flag = false;
+            }
+
+            objConnection.Close();
+            reader.Close();
+
+            if(!flag)
+            {
+                MessageBox.Show("Looks like somebody has borrowed this book. Try again later", "Delete Status", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                objCommand.CommandText = "DELETE FROM Books WHERE ISBN='" + isbn + "'";
+                objConnection.Open();
+                objCommand.ExecuteNonQuery();
+                objConnection.Close();
+
+                MessageBox.Show("You have successfully deleted this book from the catalog", "Delete Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
+            String cs = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+            String sql = "SELECT * FROM Books";
+            SqlConnection connection = new SqlConnection(cs);
+
+            SqlDataAdapter dataadapter = new SqlDataAdapter(sql, connection);
+            DataSet ds = new DataSet();
+            SqlCommandBuilder cmdBuilder = new SqlCommandBuilder();
+
+            connection.Open();
+            dataadapter.Fill(ds, "Books");
+            connection.Close();
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "Books";
+
+
+
+        }
     }
 }
