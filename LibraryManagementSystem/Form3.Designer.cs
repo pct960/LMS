@@ -66,6 +66,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 2;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Book Antiqua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.BlanchedAlmond;
@@ -82,6 +83,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 2;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Book Antiqua", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.BlanchedAlmond;

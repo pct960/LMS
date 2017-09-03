@@ -56,30 +56,42 @@ namespace LibraryManagementSystem
             String admin_id = textBox1.Text;
             String password = textBox2.Text;
             bool login_success = false;
-            SqlConnection objConnection = new SqlConnection();
-            objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
-            SqlCommand objCommand = new SqlCommand();
-            objCommand.Connection = objConnection;
-            objCommand.CommandText = "SELECT * FROM Admin WHERE Admin_ID=@1 AND Password=@2";
-            objCommand.Parameters.AddWithValue("@1", int.Parse(admin_id));
-            objCommand.Parameters.AddWithValue("@2", password);
-            SqlDataReader reader;
-            objConnection.Open();
-            reader = objCommand.ExecuteReader();
-            
-            while (reader.Read())
+
+            if (admin_id == "")
             {
-                login_success = true;
-                Class1 obj = new Class1("Admin", admin_id.ToString());
-                Form5 ob = new Form5();
-                this.Close();
-                ob.Show();
+                MessageBox.Show("Admin ID field is empty");
             }
-
-            if (!login_success)
+            else if (password == "")
             {
-                MessageBox.Show("Incorrect Email or Password. Try again", "Login Failed", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+                MessageBox.Show("Password field is empty");
+            }
+            else
+            {
+                SqlConnection objConnection = new SqlConnection();
+                objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+                SqlCommand objCommand = new SqlCommand();
+                objCommand.Connection = objConnection;
+                objCommand.CommandText = "SELECT * FROM Admin WHERE Admin_ID=@1 AND Password=@2";
+                objCommand.Parameters.AddWithValue("@1", int.Parse(admin_id));
+                objCommand.Parameters.AddWithValue("@2", password);
+                SqlDataReader reader;
+                objConnection.Open();
+                reader = objCommand.ExecuteReader();
 
+                while (reader.Read())
+                {
+                    login_success = true;
+                    Class1 obj = new Class1("Admin", admin_id.ToString());
+                    Form5 ob = new Form5();
+                    this.Close();
+                    ob.Show();
+                }
+
+                if (!login_success)
+                {
+                    MessageBox.Show("Incorrect Email or Password. Try again", "Login Failed", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+
+                }
             }
             
         }

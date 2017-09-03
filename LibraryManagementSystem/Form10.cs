@@ -42,24 +42,40 @@ namespace LibraryManagementSystem
             String isbn = textBox3.Text;
             String name = textBox1.Text;
             String author = textBox2.Text;
-            SqlConnection objConnection = new SqlConnection();
-            objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
-            SqlCommand objCommand = new SqlCommand();
-            objCommand.Connection = objConnection;
-            objCommand.CommandText = "INSERT INTO Books VALUES(@1,@2,@3,'1')";
-            objCommand.Parameters.AddWithValue("@1", isbn);
-            objCommand.Parameters.AddWithValue("@2", name);
-            objCommand.Parameters.AddWithValue("@3", author);
 
-            objConnection.Open();
-            objCommand.ExecuteNonQuery();
-            objConnection.Close();
+            if (isbn == "")
+            {
+                MessageBox.Show("The 'isbn' field is emty");
+            }
+            else if (name == "")
+            {
+                MessageBox.Show("The 'Book Name' field is empty");
+            }
+            else if (author == "")
+            {
+                MessageBox.Show("The 'Author' field is empty");
+            }
+            else
+            {
+                SqlConnection objConnection = new SqlConnection();
+                objConnection.ConnectionString = "Server = PCT\\SQLExpress; Database = LMS; user = sa; password = SQL2014wrox";
+                SqlCommand objCommand = new SqlCommand();
+                objCommand.Connection = objConnection;
+                objCommand.CommandText = "INSERT INTO Books VALUES(@1,@2,@3,'1')";
+                objCommand.Parameters.AddWithValue("@1", isbn);
+                objCommand.Parameters.AddWithValue("@2", name);
+                objCommand.Parameters.AddWithValue("@3", author);
 
-            MessageBox.Show("You have successfullly added the book to the database", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                objConnection.Open();
+                objCommand.ExecuteNonQuery();
+                objConnection.Close();
 
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+                MessageBox.Show("You have successfullly added the book to the database", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+            }
         }
     }
 }
